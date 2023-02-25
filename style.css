@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--light-grayish-cyan);
+    padding: 2em;
+}
+
+.logo{
+    position: relative;
+    bottom: 15px;
+    width: 1fr;
+}
+
+.hero{
+    display: flex;
+    gap: 1em;
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.grid-tip-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+}
+
+.custom{
+    width: 75px;
+    height: 50px;
+}
+
+.custom::placeholder{
+    color: var(--white);
+}
+
+.percent{
+    color: var(--white);
+    background-color: var(--very-dark-cyan);
+    border: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    transition: 0.3s ease;
+    font-size: 0.8em;
+    width: 75px;
+    height: 50px;
+}
+
+.percent:focus{
+    background-color: var(--strong-cyan);
+    color: var(--dark-grayish-cyan);
+}
+
+.percent:hover{
+    background-color: var(--strong-cyan);
+    color: var(--dark-grayish-cyan);
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--very-dark-cyan);
+    padding: 1em;
+    border-radius: 1em;
+    width: 100%;
+    gap: 1em;
+}
+
+.small-right-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.person{
+    opacity: 0.7;
+    color: var(--grayish-cyan);
+}
+
+.total{
+    color: var(--white);
+}
+
+.small{
+    font-size: 0.7em;
+}
+
+input{
+    text-align: right;
+    height: 2em;
+    color: var(--dark-grayish-cyan);
+    border: none;
+    background-color: var(--light-grayish-cyan);
+    border-radius: 0.5em;
+    padding-right: 1em;
+}
+
+.dark{
+    color: var(--dark-grayish-cyan);
+}
+
+.strong-cyan{
+    color: var(--strong-cyan);
+    font-size: 1.6em;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+.reset{
+    background-color: var(--strong-cyan);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 2em;
+    border-radius: 0.3em;
+    padding: 0.2em;
+}
+
+.bill{
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+.number-of-people{
+    background-image: url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 2%;
+}
+
+.attribution{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+a:hover{
+    color: var(--dark-grayish-cyan);
+}
+
+.dollar-sign{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+
+    .hero{
+        flex-direction: column;
+    }
+    
+}
