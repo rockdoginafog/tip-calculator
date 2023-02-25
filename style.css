@@ -91,7 +91,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--very-dark-cyan);
-    padding: 1em;
+    padding: 3em;
     border-radius: 1em;
     width: 100%;
     gap: 1em;
